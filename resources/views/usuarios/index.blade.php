@@ -23,7 +23,7 @@ Listado de User registrados <a href="usuarios/create"><button type="button" clas
     <tbody>
         @foreach ($users as $user)
         <tr>
-            <th scope="row">{{$user->id}}</th>
+            <th scope="row"><a href="{{ url('/usuarios/show/' . $user->id ) }}">{{$user->id}}</a></th>
             <td>{{$user->name}}</td>
             <td>{{$user->email}}</td>
         <td>
